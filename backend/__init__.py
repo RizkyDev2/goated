@@ -1,0 +1,1 @@
+from .admin import routes as admin_routes
