@@ -25,6 +25,8 @@ export const PredictPage: React.FC = () => {
   const { user } = useAuth();
   const token = user?.token || "";
 
+  
+
   useEffect(() => {
     const fetchAvailableModels = async () => {
       try {
