@@ -7,3 +7,4 @@ db = SQLAlchemy()
 # Import all models here
 from .user import User
 from .classification_history import ClassificationHistory
+from .aimodels import AIModel  

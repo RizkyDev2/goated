@@ -101,7 +101,7 @@ def add_new_model():
         print(f"Error in add_new_model: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
-@admin_bp.route('/models/<model_name>', methods=['DELETE'])
+@admin_bp.route('/models/<path:model_name>', methods=['DELETE'])
 @jwt_required()
 def delete_model(model_name):
     try:
